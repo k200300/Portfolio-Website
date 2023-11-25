@@ -88,3 +88,23 @@ $(document).ready(function () {
       }
     });
   });
+
+  
+  document.addEventListener('DOMContentLoaded', function () {
+      const projectFilterInput = document.getElementById('projectFilter');
+      const projectList = document.getElementById('projectList');
+      const projects = document.getElementsByClassName('project');
+
+      projectFilterInput.addEventListener('input', function () {
+          const filter = projectFilterInput.value.toLowerCase();
+
+          for (const project of projects) {
+              const projectText = project.textContent.toLowerCase();
+              if (projectText.includes(filter)) {
+                  project.style.display = 'list-item';
+              } else {
+                  project.style.display = 'none';
+              }
+          }
+      });
+  });

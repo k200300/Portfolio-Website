@@ -285,6 +285,9 @@
     -webkit-line-clamp: 3;
     -webkit-box-orient: vertical;
   }
+  .about .title {
+    color: #000000;
+}
   
   .about .about-content .left {
     width: 45%;
@@ -340,18 +343,18 @@
   
   /*  Service  */
   .services,
-  .projects {
+  .education {
     color: #fff;
     background: #111;
   }
   
   .services .title::before,
-  .projects .title::before {
+  .education .title::before {
     background: #fff;
   }
   
   .services .title::after,
-  .projects .title::after {
+  .education .title::after {
     background: #111;
     content: "What I Provide ?";
   }
@@ -400,11 +403,14 @@
   /*  Skills  */
   .skills {
     background: radial-gradient(#e1efff, white);
+  
   }
   .skills .title::after {
     content: "—What I Know ?—";
   }
-  
+  .skills .title{
+    color: #000000;
+  }
   .skills .skills-content .column {
     width: calc(50% - 30px);
   }
@@ -505,54 +511,51 @@
     width: 70%;
   }
   
-  /*  Projects  */
-  .projects .title::after {
-    content: "What I did ?";
-  }
-  
-  .projects .carousel .card {
-    background: #222;
-    border-radius: 6px;
-    padding: 25px 35px;
-    text-align: center;
-    overflow: hidden;
-    transition: all 0.3s ease;
-  }
-  
-  .projects .carousel .card:hover {
-    background: #1e3551;
-  }
-  
-  .projects .carousel .card .box {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    transition: all 0.3s ease;
-  }
-  
-  .projects .carousel .card:hover .box {
-    transform: scale(1.05);
-  }
-  
-  .projects .carousel .card .text {
-    font-size: 25px;
-    font-weight: 500;
-    margin: 10px 0 7px 0;
-  }
-  
-  .projects .carousel .card img {
-    height: 150px;
-    width: 150px;
-    object-fit: cover;
-    border-radius: 50%;
-    border: 5px solid #888c8d;
-    transition: all 0.3s ease;
-  }
-  
-  .projects .carousel .card:hover img {
-    border-color: #fff;
-  }
+  /* Education Section */
+.education {
+  background-color: #000000;
+  padding: 50px 0;
+}
+
+.max-width {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.title {
+  text-align: center;
+  color: #ffffff;
+}
+
+/* Courses Table */
+.courses-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.courses-table th, .courses-table td {
+  border: 1px solid #8d5e5e;
+  padding: 8px;
+  text-align: left;
+  background-color: #000000;
+}
+
+
+.courses-table th {
+  background-color: #673131;
+}
+
+/* Owl Carousel */
+.owl-carousel {
+  display: flex;
+  justify-content: space-between;
+}
+
+.owl-item {
+  width: 100%;
+
+
   
   .owl-dots {
     text-align: center;
@@ -796,7 +799,11 @@
   footer span a:hover {
     text-decoration: underline;
   }
-  
+  /* Add your existing styles here */
+
+
+/* Add your existing styles here */
+
   /*  Media Query  */
   @keyframes pulsate {
     0% {
